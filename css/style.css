@@ -41,45 +41,45 @@ body {
     justify-content: space-around;
 }
 
+.w100xs {
+    width: 100%;
+}
+
+.w50xs {
+    width: 50%;
+}
+
+.wxs1 {
+    width: 1rem;
+}
+
+.vxs2 {
+    width: 2rem;
+}
+
+.vxs3 {
+    width: 3rem;
+}
+
+.pd05 {
+    padding: 0.5rem;
+}
+
+.pd1 {
+    padding: 1rem;
+}
+
+.pd15 {
+    padding: 1.5rem
+}
+
+.pd2 {
+    padding: 2rem;
+}
+
 
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 @media screen and (max-width: 450px) {
-
-    .w100xs {
-    width: 100%;
-    }
-
-    .w50xs {
-        width: 50%;
-    }
-
-    .wxs1 {
-        width: 1rem;
-    }
-
-    .vxs2 {
-        width: 2rem;
-    }
-
-    .vxs3 {
-        width: 3rem;
-    }
-
-    .pd05 {
-        padding: 0.5rem;
-    }
-
-    .pd1 {
-        padding: 1rem;
-    }
-
-    .pd15 {
-        padding: 1.5rem
-    }
-
-    .pd2 {
-        padding: 2rem;
-    }
 
     .containerHeader {
         background-color: orange;
@@ -87,7 +87,7 @@ body {
     }
 
     .lateralBar {
-        background-color: rgb(138, 128, 128)
+        background-color: rgb(138, 128, 128);
     }
 
     footer {
@@ -110,47 +110,61 @@ body {
     #logo {
         display: none;
     }
+
+    .description {
+        display: none;
+    }
+
+    .listPlaylist {
+        display: none;
+    }
 }
 
 /* MOBILE SMALL, DA 451 A 768PX */
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
     
-    .w100xs {
-    width: 100%;
+    .containerHeader {
+        background-color: orange;
+        
     }
 
-    .w50xs {
-        width: 50%;
+    .lateralBar {
+        background-color: rgb(138, 128, 128);
+        width: 40%;
     }
 
-    .wxs1 {
-        width: 1rem;
+    footer {
+        height: 10vh;
+        background-color: blueviolet;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
-    .vxs2 {
-        width: 2rem;
-    }
-
-    .vxs3 {
-        width: 3rem;
-    }
-
-    .pd05 {
-        padding: 0.5rem;
-    }
-
-    .pd1 {
+    .linkNav a {
+        font-size: 0.7rem;
         padding: 1rem;
     }
 
-    .pd15 {
-        padding: 1.5rem
+    .albumsImagine img {
+        width: 100%;
     }
 
-    .pd2 {
-        padding: 2rem;
+    #logoSmall {
+        display: none;
     }
+
+    #logo {
+        width: 4rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+.w25md {
+    width: 25%;
+}
 
     .containerHeader {
         background-color: orange;
@@ -158,7 +172,8 @@ body {
     }
 
     .lateralBar {
-        background-color: rgb(138, 128, 128)
+        background-color: rgb(138, 128, 128);
+        width: 40%;
     }
 
     footer {
