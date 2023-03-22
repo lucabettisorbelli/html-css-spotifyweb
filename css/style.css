@@ -71,13 +71,20 @@ body {
         min-width: 20%;
         height: 100vh;
         background-color: aquamarine;
+        position: absolute;
+        top: 0;
     }
 
     .containerHeader {
         height: 20vh;
         min-width: 80%;
         background-color: aqua;
+        margin-left: 20%;
     }
 
+    main {
+        margin-left: 20%;
+        background-color: blue;
+    }
     
 }
