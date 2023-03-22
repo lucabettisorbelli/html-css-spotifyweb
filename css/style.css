@@ -64,27 +64,31 @@ body {
     flex-wrap: wrap;
 }
 
+.flexEnd {
+    justify-content: flex-end;
+}
+
 
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 @media screen and (max-width: 450px) {
-    .containerSpotify {
-        min-width: 20%;
-        height: 100vh;
-        background-color: aquamarine;
-        position: absolute;
-        top: 0;
+
+    .containerLoghi {
+    
     }
 
     .containerHeader {
-        height: 20vh;
-        min-width: 80%;
-        background-color: aqua;
-        margin-left: 20%;
+        background-color: orange;
+        
     }
 
-    main {
-        margin-left: 20%;
-        background-color: blue;
+    .lateralBar {
+        width: 20%;
+        height: 90vh;
+        background-color: rgb(138, 128, 128)
     }
-    
+  
+    footer {
+        height: 10vh;
+        background-color: blueviolet;
+    }
 }
