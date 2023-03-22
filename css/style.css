@@ -12,41 +12,6 @@ body {
 }
 
 /* HELPER  */
-.w100xs {
-    width: 100%;
-}
-
-.w50xs {
-    width: 50%;
-}
-
-.wxs1 {
-    width: 1rem;
-}
-
-.vxs2 {
-    width: 2rem;
-}
-
-.vxs3 {
-    width: 3rem;
-}
-
-.pd05 {
-    padding: 0.5rem;
-}
-
-.pd1 {
-    padding: 1rem;
-}
-
-.pd15 {
-    padding: 1.5rem
-}
-
-.pd2 {
-    padding: 2rem;
-}
 
 .flex {
     display: flex;
@@ -68,12 +33,52 @@ body {
     justify-content: flex-end;
 }
 
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
 
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 @media screen and (max-width: 450px) {
 
-    .containerLoghi {
-    
+    .w100xs {
+    width: 100%;
+    }
+
+    .w50xs {
+        width: 50%;
+    }
+
+    .wxs1 {
+        width: 1rem;
+    }
+
+    .vxs2 {
+        width: 2rem;
+    }
+
+    .vxs3 {
+        width: 3rem;
+    }
+
+    .pd05 {
+        padding: 0.5rem;
+    }
+
+    .pd1 {
+        padding: 1rem;
+    }
+
+    .pd15 {
+        padding: 1.5rem
+    }
+
+    .pd2 {
+        padding: 2rem;
     }
 
     .containerHeader {
@@ -82,13 +87,102 @@ body {
     }
 
     .lateralBar {
-        width: 20%;
-        height: 90vh;
         background-color: rgb(138, 128, 128)
     }
-  
+
     footer {
         height: 10vh;
         background-color: blueviolet;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .linkNav a {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+
+    .albumsImagine img {
+        width: 100%;
+    }
+
+    #logo {
+        display: none;
+    }
+}
+
+/* MOBILE SMALL, DA 451 A 768PX */
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    
+    .w100xs {
+    width: 100%;
+    }
+
+    .w50xs {
+        width: 50%;
+    }
+
+    .wxs1 {
+        width: 1rem;
+    }
+
+    .vxs2 {
+        width: 2rem;
+    }
+
+    .vxs3 {
+        width: 3rem;
+    }
+
+    .pd05 {
+        padding: 0.5rem;
+    }
+
+    .pd1 {
+        padding: 1rem;
+    }
+
+    .pd15 {
+        padding: 1.5rem
+    }
+
+    .pd2 {
+        padding: 2rem;
+    }
+
+    .containerHeader {
+        background-color: orange;
+        
+    }
+
+    .lateralBar {
+        background-color: rgb(138, 128, 128)
+    }
+
+    footer {
+        height: 10vh;
+        background-color: blueviolet;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .linkNav a {
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+
+    .albumsImagine img {
+        width: 100%;
+    }
+
+    #logoSmall {
+        display: none;
+    }
+
+    #logo {
+        width: 4rem;
     }
 }
