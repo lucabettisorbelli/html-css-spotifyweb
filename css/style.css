@@ -105,7 +105,7 @@ footer {
 .contRigth {
     height: calc( 100vh - 120px);
     overflow-y: auto;
-    width: calc( 100% - 250px);
+    width: calc( 100% - 220px);
 }
 
 .containerHeader {
@@ -116,7 +116,11 @@ footer {
 }
 
 .linkNav {
-    margin-top: 70px;
+    padding-top: 70px;
+}
+
+.linkNav a:hover {
+    border-bottom: 2px solid #adff2f;
 }
 
 .lateralBar {
@@ -132,6 +136,7 @@ footer {
     font-size: 0.7rem;
     padding: 1rem;
     text-decoration: none;
+    color: #77797e;
 }
 
 .titleHeader {
@@ -153,7 +158,7 @@ main {
 }
 
 .imgFooter img {
-    width: 15%;
+    width: 70px;
 }
 
 .contFooter {
@@ -172,9 +177,18 @@ main {
     width: 33%;
 }
 
+.albumsImagineBottom img{
+    border-radius: 50%;
+    width: 100%;
+}
+
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+
+    .contFooter {
+        height: 70%;
+    }
 
     .lateralBar {
         width: 50px;
@@ -220,8 +234,10 @@ main {
 
 /* MOBILE SMALL, DA 451 A 768PX */
 
-@media screen and (min-width: 451px) and (max-width: 768px) {
-    
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contFooter {
+        padding: 0;
+    }
     .textPlaylist {
         padding-left: 1rem;
     }
