@@ -41,11 +41,15 @@ body {
     justify-content: space-around;
 }
 
-.w100xs {
-    width: 100%;
+.txcenter {
+    text-align: center;
 }
 
-.w50xs {
+.w100 {
+    /* width: 100%; */
+}
+
+.w50 {
     width: 50%;
 }
 
@@ -77,25 +81,32 @@ body {
     padding: 2rem;
 }
 
+/* GENERIC */
+
+footer {
+    height: 50px;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.contRigth {
+    height: calc( 100vh - 50px);
+    overflow-y: scroll;
+}
 
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 @media screen and (max-width: 450px) {
 
     .containerHeader {
         background-color: orange;
-        
+    }
+
+    .containerLoghi {
+        margin: 0;
     }
 
     .lateralBar {
         background-color: rgb(138, 128, 128);
-    }
-
-    footer {
-        height: 10vh;
-        background-color: blueviolet;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
 
     .linkNav a {
@@ -132,13 +143,12 @@ body {
     .lateralBar {
         background-color: rgb(138, 128, 128);
         width: 40%;
+        min-width: 120px;
     }
 
     footer {
-        height: 10vh;
+        height: 50px;
         background-color: blueviolet;
-        position: fixed;
-        bottom: 0;
         width: 100%;
     }
 
@@ -151,20 +161,27 @@ body {
         width: 100%;
     }
 
+    .textPlaylist {
+        padding-left: 1rem;
+    }
+
     #logoSmall {
         display: none;
     }
 
     #logo {
-        width: 4rem;
+        width: 70%;
+        padding-left: 1rem;
+        padding-top: 1rem;
     }
 }
+/* MEDIUM, DA 769 A 992 px */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
-.w25md {
-    width: 25%;
-}
+    .w25md {
+        width: 25%;
+    }
 
     .containerHeader {
         background-color: orange;
@@ -176,12 +193,49 @@ body {
         width: 40%;
     }
 
-    footer {
-        height: 10vh;
-        background-color: blueviolet;
-        position: fixed;
-        bottom: 0;
+    .linkNav a {
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+
+    .albumsImagine img {
         width: 100%;
+    }
+
+    .textPlaylist {
+        padding-left: 1rem;
+    }
+
+    #logoSmall {
+        display: none;
+    }
+
+    #logo {
+        width: 70%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+    .wlg {
+        width: calc(100% / 6);
+    }
+
+    .containerHeader {
+        background-color: orange;
+        
+    }
+
+    .linkNav {
+        justify-content: center;
+    }
+
+    .lateralBar {
+        background-color: rgb(138, 128, 128);
+        width: 40%;
+        max-width: 200px;
     }
 
     .linkNav a {
@@ -193,11 +247,18 @@ body {
         width: 100%;
     }
 
+    .textPlaylist {
+        padding-left: 1rem;
+    }
+
     #logoSmall {
         display: none;
     }
 
     #logo {
-        width: 4rem;
+        width: 70%;
+        padding-left: 1rem;
+        padding-top: 1rem;
     }
 }
+
