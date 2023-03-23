@@ -30,6 +30,10 @@ body {
     flex-wrap: wrap;
 }
 
+.justifyCenter {
+    justify-content: center;
+}
+
 .flexEnd {
     justify-content: flex-end;
 }
@@ -93,13 +97,13 @@ body {
 /* GENERIC */
 
 footer {
-    height: 50px;
+    height: 120px;
     background-color: #282828;
     width: 100%;
 }
 
 .contRigth {
-    height: calc( 100vh - 50px);
+    height: calc( 100vh - 120px);
     overflow-y: auto;
     width: calc( 100% - 250px);
 }
@@ -148,6 +152,26 @@ main {
     background-color: #141922;
 }
 
+.imgFooter img {
+    width: 15%;
+}
+
+.contFooter {
+    height: 100%;
+}
+
+.imgFooter {
+    width: 33%;
+}
+
+.buttonMusic {
+    width: 33%;
+}
+
+.volumMusic {
+    width: 33%;
+}
+
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 
 @media screen and (max-width: 450px) {
@@ -157,11 +181,9 @@ main {
     }
 
     .containerHeader {
-        background-color: orange;
         position: fixed;
         top: 0;
         width: calc( 100% - 50px);
-        text-align: end;
     }
 
     .contRigth {
@@ -188,6 +210,10 @@ main {
     }
 
     .listPlaylist {
+        display: none;
+    }
+
+    .insta {
         display: none;
     }
 }
