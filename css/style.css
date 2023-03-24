@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
 }
 
@@ -135,6 +135,7 @@ footer {
 .lateralBar {
     background-color: black;
     width: 220px;
+    height: calc(100vh - 120px);
 }
 
 .albumsImagine img {
