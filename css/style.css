@@ -94,6 +94,10 @@ body {
     color: white;
 }
 
+.colLightGrey {
+    color: #a3a3a3;
+}
+
 /* GENERIC */
 
 footer {
@@ -151,6 +155,15 @@ footer {
 .loghiBottom {
     height: 100%;
     padding-left: 1rem;
+}
+
+.logoPlaylist {
+    background-color: #a3a3a3;
+    margin: 0.5rem;
+}
+
+.textPlaylist {
+    padding: 1rem 0.5rem;
 }
 
 main {
@@ -276,10 +289,6 @@ main {
         padding: 0.5rem;
     }
 
-    .textPlaylist {
-        padding-left: 1rem;
-    }
-
     #logoSmall {
         display: none;
     }
@@ -319,10 +328,6 @@ main {
         width: 25%;
     }
 
-    .textPlaylist {
-        padding-left: 1rem;
-    }
-
     #logoSmall {
         display: none;
     }
@@ -357,10 +362,6 @@ main {
         justify-content: center;
     }
 
-    .textPlaylist {
-        padding-left: 1rem;
-    }
-
     #logoSmall {
         display: none;
     }
@@ -381,3 +382,9 @@ main {
     }
 }
 
+@media screen and (max-height: 600px) {
+    .listPlaylist {
+        overflow-y: auto;
+        height: 100px;
+    }
+}
