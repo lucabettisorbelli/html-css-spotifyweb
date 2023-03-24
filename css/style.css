@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 /* HELPER  */
@@ -143,7 +143,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -166,15 +166,15 @@ main {
 }
 
 .imgFooter {
-    width: 33%;
+    width: 20%;
 }
 
 .buttonMusic {
-    width: 33%;
+    width: 60%;
 }
 
 .volumMusic {
-    width: 33%;
+    width: 20%;
 }
 
 .albumsImagineBottom img{
@@ -182,12 +182,40 @@ main {
     width: 100%;
 }
 
+.progress-bar {
+    background-color: black;
+    height: 5px;
+    width: 100px;
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    margin-bottom: 10px;
+    background-color: #adff2f;
+}
+
+.progress-barVolum {
+    background-color: black;
+    height: 5px;
+    width: 100px;
+}
+
+.progress-barVolum span {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: #adff2f;
+}
+
 /* MOBILE EXTRA SMALL, FINO A 450px*/
 
 @media screen and (max-width: 480px) {
 
-    .contFooter {
-        height: 70%;
+    .imgFooter img {
+        width: 50px;
     }
 
     .lateralBar {
@@ -230,14 +258,24 @@ main {
     .insta {
         display: none;
     }
+
+    .progress-bar {
+        width: 30px;
+    }
+
+    .progress-barVolum {
+        width: 30px;
+    }
 }
 
 /* MOBILE SMALL, DA 451 A 768PX */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .contFooter {
-        padding: 0;
+
+    .iconePlay span{
+        padding: 0.5rem;
     }
+
     .textPlaylist {
         padding-left: 1rem;
     }
@@ -256,10 +294,26 @@ main {
         padding-top: 0.5rem;
         padding-left: 1rem;
     }
+
+    .progress-bar {
+        width: 50px;
+    }
+
+    .progress-barVolum {
+        width: 50px;
+    }
+
+    .descriptionSong {
+        padding: 0.5rem;
+    }
 }
 /* MEDIUM, DA 769 A 992 px */
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
+    .iconePlay span{
+        padding: 0.5rem;
+    }
 
     .w25md {
         width: 25%;
@@ -283,9 +337,17 @@ main {
         padding-top: 0.5rem;
         padding-left: 1rem;
     }
+
+    .descriptionSong {
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 993px) {
+
+    .iconePlay span{
+        padding: 0.5rem;
+    }
 
     .wlg {
         width: calc(100% / 6);
@@ -312,6 +374,10 @@ main {
     .contLoghiMixed {
         padding-top: 0.5rem;
         padding-left: 1rem;
+    }
+
+    .descriptionSong {
+        padding: 0.5rem;
     }
 }
 
