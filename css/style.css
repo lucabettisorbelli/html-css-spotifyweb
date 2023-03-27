@@ -221,13 +221,28 @@ main {
     width: 100%;
 }
 
+.colorBar {
+    position: relative;
+}
+
+.pointBar {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translatey(-25%);
+    top: 0;
+    right: 0;
+}
+
 .progress-bar {
     background-color: black;
     height: 5px;
     width: 150px;
 }
 
-.progress-bar span {
+.progress-bar .colorBar {
     display: inline-block;
     height: 100%;
     width: 25%;
@@ -235,7 +250,12 @@ main {
     background-color: gray;
 }
 
-.progress-bar:hover span {
+.progress-bar:hover .colorBar {
+    display: inline-block;
+    background-color: #adff2f;
+}
+
+.progress-bar:hover .pointBar {
     display: inline-block;
     background-color: #adff2f;
 }
@@ -246,7 +266,7 @@ main {
     width: 150px;
 }
 
-.progress-barVolum span {
+.progress-barVolum .colorBar {
     display: inline-block;
     height: 100%;
     width: 70%;
@@ -254,7 +274,12 @@ main {
     background-color: gray;
 }
 
-.progress-barVolum:hover span {
+.progress-barVolum:hover .colorBar {
+    background-color: #adff2f;
+    display: inline-block;
+}
+
+.progress-barVolum:hover .pointBar {
     background-color: #adff2f;
     display: inline-block;
 }
